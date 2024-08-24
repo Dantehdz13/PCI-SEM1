@@ -10,7 +10,7 @@ pseudocódigo:
 
 3.se le solicitará al usuario que proporcione la cantidad o medida que quiera convertir y a qué
 
-3.Una vez seleccionado la cantidad y tipo de conversión, empezará con los calculos propios de la operación
+4.Una vez seleccionado la cantidad y tipo de conversión, empezará con los calculos propios de la operación
 (como ejemplo, si selecciona de m a km, el monto se multiplicará por mil)
 
-4.se le mostrará al usuario el resultado de su conversión en pantalla.
+5.se le mostrará al usuario el resultado de su conversión en pantalla.
