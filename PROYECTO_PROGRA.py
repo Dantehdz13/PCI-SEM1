@@ -41,3 +41,59 @@ if opcion1==1:
 #Para cualquier otra opción fuera de el rango de 1 a 4, terminará la operación automáticamente.  
     else:
         print("Opción no válida, la operación ha terminado.")
+#.........................................................................................................
+#Ahora la conversión a unidades de medida de volumen (litros, mililitros, etc.)
+elif opcion1 == 2:
+    medida = float(input("¿Qué unidad de volumen deseas convertir? \n 1.L \n 2.ml \n 3.cl \n 4.dl \n"))
+    medida2 = float(input("Ingrese el valor numérico del volumen: \n"))
+
+    if medida == 1:
+        ml = medida2 * 1000
+        cl = medida2 * 100
+        dl = medida2 * 10
+        print(f"El valor del volumen en mililitros es {ml}, en centilitros es {cl} y en decilitros es {dl}")
+    elif medida == 2:
+        l = medida2 / 1000
+        cl = medida2 / 10
+        dl = medida2 / 100
+        print(f"El valor del volumen en litros es {l}, en centilitros es {cl} y en decilitros es {dl}")
+    elif medida == 3:
+        l = medida2 / 100
+        ml = medida2 * 10
+        dl = medida2 / 10
+        print(f"El valor del volumen en litros es {l}, en mililitros es {ml} y en decilitros es {dl}")
+    elif medida == 4:
+        l = medida2 / 10
+        ml = medida2 * 100
+        cl = medida2 * 10
+        print(f"El valor del volumen en litros es {l}, en mililitros es {ml} y en centilitros es {cl}")
+    else:
+        print("Opción no válida, la operación ha terminado.")
+#.........................................................................................................
+# Ahora la conversión a unidades de peso (gramos, kilogramos, etc.)
+elif opcion1 == 4:
+    medida = float(input("¿Qué unidad de peso deseas convertir? \n 1.kg \n 2.g \n 3.mg \n 4.T \n"))
+    medida2 = float(input("Ingrese el valor numérico del peso: \n"))
+
+    if medida == 1:
+        g = medida2 * 1000
+        mg = medida2 * 1000000
+        t = medida2 / 1000
+        print(f"El valor del peso en gramos es {g}, en miligramos es {mg} y en toneladas es {t}")
+    elif medida == 2:
+        kg = medida2 / 1000
+        mg = medida2 * 1000
+        t = medida2 / 1000000
+        print(f"El valor del peso en kilogramos es {kg}, en miligramos es {mg} y en toneladas es {t}")
+    elif medida == 3:
+        kg = medida2 / 1000000
+        g = medida2 / 1000
+        t = medida2 / 1000000000
+        print(f"El valor del peso en kilogramos es {kg}, en gramos es {g} y en toneladas es {t}")
+    elif medida == 4:
+        kg = medida2 * 1000
+        g = medida2 * 1000000
+        mg = medida2 * 1000000000
+        print(f"El valor del peso en kilogramos es {kg}, en gramos es {g} y en miligramos es {mg}")
+    else:
+        print("Opción no válida, la operación ha terminado.")
