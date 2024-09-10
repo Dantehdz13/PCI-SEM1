@@ -12,14 +12,14 @@ opcion1=float(input("Selecciona una unidad de medida o de peso: \n 1.metros \n 2
 #después de haber leído la opción general, dependiendo de la misma, se le pedirá que seleccione la medida o cantidad que tenga el usuario, y a continuación a cual quiere convertirla.
 if opcion1==1:
     medida=float(input("¿Qué unidad de medida deseas convertir? \n 1.km \n 2.m \n 3.cm \n 4.mm \n"))
-    medida2=float(input("ingrese el valor numérico de la nedida: \n"))
+    medida2=float(input("ingrese el valor numérico de la medida: \n"))
 
 #Hacer la conversión según la medida seleccionada...
     if medida==1:
         m= medida2*1000
         mm=medida2*1000000
         cm=medida2*100000
-        print (f"El valor de la medida en metros es {m}, en milímetros es {mm} y en centímetros es {cm}")
+        print (f"El valor de la medida en metros es {m}, en milímetros es {mm} y en centímetros es {cm} cm")
 #elif se usa como un else if, pero resumido.
     elif medida==2:
         km= medida2/1000
@@ -97,3 +97,24 @@ elif opcion1 == 4:
         print(f"El valor del peso en kilogramos es {kg}, en gramos es {g} y en miligramos es {mg}")
     else:
         print("Opción no válida, la operación ha terminado.")
+
+#.........................................................................................................
+# Por último la conversión de celcius a kelvin y viceversa
+elif opcion1 == 3:
+    medida = float(input("¿Qué unidad de temperatura deseas convertir? \n 1.Kelvin \n 2.Celcius \n"))
+    medida2=float(input("ingresa el valor numérico de los grados: \n"))
+
+    if medida==1:
+        c = medida2 - 273.15
+        print(f"El valor de la temperatura en celcius es {c}")
+    elif medida==2:
+        k = medida2 + 273.15
+        print(f"El valor de la temperatura en kelvin es {k}")
+    else:
+        print("Opción no válida, la operación ha terminado.")
+
+#.........................................................................................................
+# Si el usuario no selecciona una opción válida, aparecerá un mensaje de error...
+else:
+    print("Opción invalida, el programa se va a cerrar.")
+    
