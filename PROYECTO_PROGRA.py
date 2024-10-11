@@ -3,7 +3,7 @@
 #Inicio del proyecto: Vie 23 de Ago de 2024.
 
 
-opgen=int(input("Convertor de unidades e identifica si un número es primo o no B), selecciona una opcion:\n 1.Convertidor de unidades \n 2. Identificar si un número es primo\n"))
+opgen=int(input("Convertor de unidades e identifica si un número es primo o no B), selecciona una opcion:\n 1.Convertidor de unidades \n 2. Identificar si un número es primo\n 3.Calcular el promedio de una clase, independiente del número de alumnos \n"))
 
     #.........................................................................................................
 if opgen==1:
@@ -142,6 +142,19 @@ if opgen==2:
                 i += 1
             print("es un número primo....")
 
-numero = int(input("ingresa un número: \n"))
-primo(numero)
-    
+    numero = int(input("ingresa un número: \n"))
+    primo(numero)
+
+#Promedio de la clase usando listas
+if opgen==3:
+    calificaciones = input("Ingrese una lista de números (separados por comas): ")
+    calificaciones = [float(x) for x in calificaciones.split(",")]
+
+    def promedio(calificaciones):
+        prom=sum(calificaciones)/len(calificaciones)
+        return prom
+
+resultado=promedio(calificaciones)
+
+print(f"el promedio de tu clase es de {resultado}")
+
