@@ -6,7 +6,7 @@
 opgen=int(input("Convertor de unidades e identifica si un número es primo o no B), selecciona una opcion:\n 1.Convertidor de unidades \n 2. Identificar si un número es primo\n 3.Calcular el promedio de una clase, independiente del número de alumnos \n"))
 
     #.........................................................................................................
-if opgen==1:
+while opgen==1:
     #declaración de la primer variable general.
     opcion1=float(input("Selecciona una unidad de medida o de peso: \n 1.metros \n 2.litros \n 3.temperatura (celcius y kelvin) \n 4.gramos \n"))
 
@@ -120,17 +120,17 @@ if opgen==1:
     # Si el usuario no selecciona una opción válida, aparecerá un mensaje de error...
     else:
         print("Opción invalida, el programa se va a cerrar.")
-
+    break
 
 
 #Empezamos con la identificación de un número primo usando funciones y while...
 
 
 
-if opgen==2:
+while opgen==2:
  #identificar si un número es primo o no...   
     def primo(numero):
-#si el número es menor o igual a 1, automáticamente lo descartamos...
+    #si el número es menor o igual a 1, automáticamente lo descartamos...
         if numero <= 1:
             print("No es un número primo...")
         else:
@@ -144,17 +144,39 @@ if opgen==2:
 
     numero = int(input("ingresa un número: \n"))
     primo(numero)
+    break
 
 #Promedio de la clase usando listas
-if opgen==3:
+while opgen==3:
     calificaciones = input("Ingrese una lista de números (separados por comas): ")
     calificaciones = [float(x) for x in calificaciones.split(",")]
 
-    def promedio(calificaciones):
-        prom=sum(calificaciones)/len(calificaciones)
-        return prom
+    alumno=[]
 
-resultado=promedio(calificaciones)
+    while True:
+        alumnoss=input("ingrese los nombres de tus alumnos (escriba 'cancelar' para terminar la lista): ")
+        if alumnoss.lower()== "cancelar":
+            break
+        alumno.append(alumnoss)
 
-print(f"el promedio de tu clase es de {resultado}")
+
+    if len(alumno) != len(calificaciones):
+        print("Los datos no coinciden, por favor ingrese los datos nuevamente...")
+
+    else:
+        for alumnoss, calif in zip(alumno,calificaciones):
+            print(f"el alumno {alumnoss} tiene una calificación de {calif}")
+
+
+
+
+        def promedio(calificaciones):
+            prom=sum(calificaciones)/len(calificaciones)
+            return prom
+
+        resultado=promedio(calificaciones)
+
+        print(f"el promedio de tu clase es de {resultado}")
+    break
+
 
