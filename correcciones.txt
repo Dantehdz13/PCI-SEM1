@@ -1,0 +1,1 @@
+Modificaciones/correcciones en el código:1. Competencia de uso de operadores aritméticos: Se especificó la unidad de medida tanto de la seleccionada por el usuario como la devuelta en pantalla2. Competencia de uso de funciones: Se implementaron diferentes funciones en el código 
