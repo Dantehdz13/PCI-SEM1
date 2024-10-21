@@ -1,1 +1,3 @@
-Modificaciones/correcciones en el c—digo:1. Competencia de uso de operadores aritmŽticos: Se especific— la unidad de medida tanto de la seleccionada por el usuario como la devuelta en pantalla2. Competencia de uso de funciones: Se implementaron diferentes funciones en el c—digo 
+Modificaciones/correcciones en el câ€”digo:
+1. Competencia de uso de operadores aritmeticos: Se especifico la unidad de medida tanto de la seleccionada por el usuario como la devuelta en pantalla
+2. Competencia de uso de funciones: Se implementaron diferentes funciones en el codigo 
